@@ -12,19 +12,6 @@ namespace TarefaAula06Dia070623
     {
         static void Main(string[] args)
         {
-
-            // mesDaViagems = 00;
-
-            /*
-            string agosto_08;
-            string Setembro_09;
-            string Outubro_10;
-            int Number08;
-            int Number09;
-            int Number10;
-            */
-
-
             int mesDaViagem;
             int diaDaViagem;
             string turno;
@@ -168,15 +155,6 @@ namespace TarefaAula06Dia070623
                 Main(null);
                 return;
             }
-
-            /*
-            Console.WriteLine($"{Number08} - {agosto_08}");
-            agosto_08 = Console.ReadLine();
-            Console.WriteLine($"{Number09} - {Setembro_09}");
-            Console.WriteLine($"{Number10} - {Outubro_10}");
-            */
-
-
             Console.ReadLine();
 
         }
