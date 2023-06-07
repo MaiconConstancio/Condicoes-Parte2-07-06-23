@@ -40,16 +40,16 @@ namespace TarefaAula06Dia070623
 
             if (mesDaViagem == 08)
             {
-                Console.WriteLine("Mês de Agosto, confirmado!");
+                 Console.WriteLine("Mês de Agosto, confirmado!");
             }
-            else if (mesDaViagem == 09)
-            {
-                Console.WriteLine("Mês de Setembro,confirmado!");
-            }
-            else if (mesDaViagem == 10)
-            {
-                Console.WriteLine("Mês de Outubro, confirmado!");
-            }
+                else if (mesDaViagem == 09)
+                {
+                       Console.WriteLine("Mês de Setembro,confirmado!");
+                }
+                    else if (mesDaViagem == 10)
+                    {
+                             Console.WriteLine("Mês de Outubro, confirmado!");
+                    }
 
             else
             {
@@ -73,13 +73,13 @@ namespace TarefaAula06Dia070623
                 Main(null);
                 return;
             }
-            else if (diaDaViagem >= 22)
-            {
-                Console.WriteLine("Dia inválido!\n"); //Pulei linha
-                Console.WriteLine("-------vamos tentar novamente?-------\n"); //Pulei linha
-                Main(null);
-                return;
-            }
+                    else if (diaDaViagem >= 22)
+                    {
+                    Console.WriteLine("Dia inválido!\n"); //Pulei linha
+                    Console.WriteLine("-------vamos tentar novamente?-------\n"); //Pulei linha
+                    Main(null);
+                    return;
+                    }
             else
             {
                 Console.WriteLine($"Dia {diaDaViagem}, reservado com sucesso!");
@@ -103,14 +103,14 @@ namespace TarefaAula06Dia070623
             {
                 Console.WriteLine("Perfeito! reservamos no período da manhã!");
             }
-            else if (turno == "Tarde")
-            {
-                Console.WriteLine("Perfeito! reservamos no período da tarde!");
-            }
-            else if (turno == "Noite")
-            {
-                Console.WriteLine("Perfeito! reservamos no período da noite!");
-            }
+                else if (turno == "Tarde")
+                {
+                    Console.WriteLine("Perfeito! reservamos no período da tarde!");
+                }
+                    else if (turno == "Noite")
+                    {
+                        Console.WriteLine("Perfeito! reservamos no período da noite!");
+                    }
             else
             {
                 Console.WriteLine("Turno inválido!\n"); //Pulei linha
@@ -143,11 +143,11 @@ namespace TarefaAula06Dia070623
 
                 Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
             }
-            else if (confirmação == "Não")
-            {
-                Console.WriteLine("Certo! A equipe MK VooS agradece a preferência!");
-                Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
-            }
+                    else if (confirmação == "Não")
+                    {
+                        Console.WriteLine("Certo! A equipe MK VooS agradece a preferência!");
+                        Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
+                    }
             else
             {
                 Console.WriteLine("Desculpe não entendi\n"); //Pulei linha
