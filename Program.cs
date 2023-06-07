@@ -1,0 +1,184 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TarefaAula06Dia070623
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // mesDaViagems = 00;
+
+            /*
+            string agosto_08;
+            string Setembro_09;
+            string Outubro_10;
+            int Number08;
+            int Number09;
+            int Number10;
+            */
+
+
+            int mesDaViagem;
+            int diaDaViagem;
+            string turno;
+            string confirmação;
+            string nome;
+            
+
+            Console.WriteLine("Seja bem-vindo a companhia de MK VooS");
+            Console.WriteLine("Viaje no seu ritmo e do seu jeito!");
+            Console.WriteLine("E para isso, nós da MK VooS vamos te ajudar!");
+            
+            Console.WriteLine("\nQual o seu nome?"); //Pulei linha
+            nome = Console.ReadLine();
+
+            Console.WriteLine("\n"); //Pulei linha
+
+            Console.WriteLine($"Certo {nome}! Temos passagens disponíveis entre os meses:");
+            Console.WriteLine("   08 - Agosto");
+            Console.WriteLine("   09 - Setembro");
+            Console.WriteLine("   10 - Outubro");
+
+            Console.WriteLine("\nObs: descreva com numeros, exemplo: 05");
+
+            mesDaViagem = Int32.Parse(Console.ReadLine());
+            Console.Write("\n"); //Pulei linha
+
+            if (mesDaViagem == 08)
+            {
+                Console.WriteLine("Mês de Agosto, confirmado!");
+            }
+            else if (mesDaViagem == 09)
+            {
+                Console.WriteLine("Mês de Setembro,confirmado!");
+            }
+            else if (mesDaViagem == 10)
+            {
+                Console.WriteLine("Mês de Outubro, confirmado!");
+            }
+
+            else
+            {
+                Console.WriteLine("Mês invalido\n"); //Pulei linha
+                Console.WriteLine("-------vamos tentar novamente?-------\n"); //Pulei linha
+                Main(null);
+                return;
+            }
+
+ // ------------------------ Mudei de bloco ( Dia ) -----------------------------------------
+
+            Console.WriteLine($"\nPara o mês {mesDaViagem}, temos disponiveis os dias 6 à 21"); //Pulei linha
+            Console.WriteLine("Qual o dia perfeito para sua viagem?");
+            diaDaViagem = Int32.Parse(Console.ReadLine());
+            Console.Write("\n"); //Pulei linha
+
+            if (diaDaViagem <= 5)
+            {
+                Console.WriteLine("Dia inválido!\n"); //Pulei linha
+                Console.WriteLine("-------vamos tentar novamente?-------\n"); //Pulei linha
+                Main(null);
+                return;
+            }
+            else if (diaDaViagem >= 22)
+            {
+                Console.WriteLine("Dia inválido!\n"); //Pulei linha
+                Console.WriteLine("-------vamos tentar novamente?-------\n"); //Pulei linha
+                Main(null);
+                return;
+            }
+            else
+            {
+                Console.WriteLine($"Dia {diaDaViagem}, reservado com sucesso!");
+            }
+
+ // ------------------------ Mudei de bloco ( Turno ) -----------------------------------------
+
+            Console.WriteLine("\nAgora que sabemos o dia e o mês, está faltando pouquinho!!"); //Pulei linha
+            Console.WriteLine("Só precisamos saber sua preferência.");
+            Console.WriteLine("Qual mais te agrada?\n"); //Pulei linha
+            Console.WriteLine("   - Manhã");
+            Console.WriteLine("   - Tarde");
+            Console.WriteLine("   - Noite");
+            Console.WriteLine("\nObs: escreva EXATAMENTE como está as opções acima."); 
+
+
+            turno = Console.ReadLine();
+            Console.Write("\n"); //Pulei linha
+
+            if (turno == "Manhã")
+            {
+                Console.WriteLine("Perfeito! reservamos no período da manhã!");
+            }
+            else if (turno == "Tarde")
+            {
+                Console.WriteLine("Perfeito! reservamos no período da tarde!");
+            }
+            else if (turno == "Noite")
+            {
+                Console.WriteLine("Perfeito! reservamos no período da noite!");
+            }
+            else
+            {
+                Console.WriteLine("Turno inválido!\n"); //Pulei linha
+                Console.WriteLine("-------vamos tentar novamente?-------\n"); //Pulei linha
+                Main(null);
+                return;
+            }
+             
+ // ------------------------ Mudei de bloco (Mensagem de confirmação) -----------------------------------------
+
+            Console.WriteLine("\nCompra das passagens realizadas com sucesso!!"); //Pulei linha
+            Console.WriteLine("Eu falei que seria rápido, não falei?!!");
+            Console.WriteLine("\n\nGostaria de ver o recibo e confirmação de sua compra?"); //Pulei DUPLA linha
+            Console.WriteLine("Digite ''Sim'' ou ''Não''");
+
+            confirmação = Console.ReadLine();
+            Console.Write("\n"); //Pulei linha
+
+            if (confirmação == "Sim")
+            {
+                Console.WriteLine("\n\nÓtimo, vamos lá!!"); //Pulei DUPLA linha
+                Console.WriteLine($"Prezado(a) {nome}");
+                Console.WriteLine($"Você adquirio uma viagem inesquecível no mês {mesDaViagem}");
+                Console.WriteLine($"No dia {diaDaViagem}");
+                Console.WriteLine($"No período da {turno}");
+                Console.WriteLine($"Caso tenha alguma dúvida, temos nosso número de SAC, anote ai!");
+                Console.WriteLine($"4002-8922 - Ao atender, é só dizer, ''novo som do Japonês que vai dar playstation 3''");
+                Console.WriteLine($"\nEntre em contato sempre que precisar, estamos ansiosos para te ajudar!"); //Pulei linha
+                Console.WriteLine($"A equipe MK VooS agradece a preferência!");
+
+                Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
+            }
+            else if (confirmação == "Não")
+            {
+                Console.WriteLine("Certo! A equipe MK VooS agradece a preferência!");
+                Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
+            }
+            else
+            {
+                Console.WriteLine("Desculpe não entendi\n"); //Pulei linha
+                Console.WriteLine("-------Vamos tentar novamente?-------\n"); //Pulei linha
+                Main(null);
+                return;
+            }
+
+            /*
+            Console.WriteLine($"{Number08} - {agosto_08}");
+            agosto_08 = Console.ReadLine();
+            Console.WriteLine($"{Number09} - {Setembro_09}");
+            Console.WriteLine($"{Number10} - {Outubro_10}");
+            */
+
+
+            Console.ReadLine();
+
+        }
+    }
+}

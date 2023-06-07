@@ -1,0 +1,8 @@
+C:\Users\MK\source\repos\TarefaAula06Dia070623\TarefaAula06Dia070623\bin\Debug\TarefaAula06Dia070623.exe.config
+C:\Users\MK\source\repos\TarefaAula06Dia070623\TarefaAula06Dia070623\bin\Debug\TarefaAula06Dia070623.exe
+C:\Users\MK\source\repos\TarefaAula06Dia070623\TarefaAula06Dia070623\bin\Debug\TarefaAula06Dia070623.pdb
+C:\Users\MK\source\repos\TarefaAula06Dia070623\TarefaAula06Dia070623\obj\Debug\TarefaAula06Dia070623.csproj.AssemblyReference.cache
+C:\Users\MK\source\repos\TarefaAula06Dia070623\TarefaAula06Dia070623\obj\Debug\TarefaAula06Dia070623.csproj.SuggestedBindingRedirects.cache
+C:\Users\MK\source\repos\TarefaAula06Dia070623\TarefaAula06Dia070623\obj\Debug\TarefaAula06Dia070623.csproj.CoreCompileInputs.cache
+C:\Users\MK\source\repos\TarefaAula06Dia070623\TarefaAula06Dia070623\obj\Debug\TarefaAula06Dia070623.exe
+C:\Users\MK\source\repos\TarefaAula06Dia070623\TarefaAula06Dia070623\obj\Debug\TarefaAula06Dia070623.pdb
