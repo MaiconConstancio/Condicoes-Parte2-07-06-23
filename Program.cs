@@ -22,6 +22,8 @@ namespace TarefaAula06Dia070623
             mesDaViagem = 0;
             NovoNome = "";
 
+            string AperteEnter;
+
 
             Console.WriteLine("Seja bem-vindo a companhia de MK VooS");
             Console.WriteLine("Viaje no seu ritmo e do seu jeito!");
@@ -160,7 +162,8 @@ namespace TarefaAula06Dia070623
 
             if (confirmação == "Sim")
             {
-                Console.WriteLine("\n\nÓtimo, vamos lá!!"); //Pulei DUPLA linha
+                Console.WriteLine("\nÓtimo, vamos lá!!"); //Pulei linha
+                Console.WriteLine($"\n\n-----------------------------------------------");//Pulei DUPLA linha
                 Console.WriteLine($"Prezado(a) {nome}");
                 Console.WriteLine($"Você adquirio uma viagem inesquecível no mês {NovoNome}!");
                 Console.WriteLine($"No dia {diaDaViagem}");
@@ -171,11 +174,17 @@ namespace TarefaAula06Dia070623
                 Console.WriteLine($"A equipe MK VooS agradece a preferência!");
 
                 Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
+                Console.WriteLine("\n Aperte a tecla >>> ENTER <<< para encerrar nossos serviços!.");
+                AperteEnter = Console.ReadLine();
+                return;
             }
                     else if (confirmação == "Não")
                     {
                         Console.WriteLine("Certo! A equipe MK VooS agradece a preferência!");
                         Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
+                        Console.WriteLine("\n Aperte a tecla >>> ENTER <<< para encerrar nossos serviços!.");
+                        AperteEnter = Console.ReadLine();
+                        return;
                     }
             else
             {
