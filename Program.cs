@@ -17,7 +17,11 @@ namespace TarefaAula06Dia070623
             string turno;
             string confirmação;
             string nome;
-            
+
+            string NovoNome;
+            mesDaViagem = 0;
+            NovoNome = "";
+
 
             Console.WriteLine("Seja bem-vindo a companhia de MK VooS");
             Console.WriteLine("Viaje no seu ritmo e do seu jeito!");
@@ -36,7 +40,7 @@ namespace TarefaAula06Dia070623
             Console.WriteLine("\nObs: descreva com numeros, exemplo: 05");
 
             mesDaViagem = Int32.Parse(Console.ReadLine());
-            Console.Write("\n"); //Pulei linha
+            Console.Write("\n"); //Pulei linha         
 
             if (mesDaViagem == 08)
             {
@@ -59,12 +63,37 @@ namespace TarefaAula06Dia070623
                 return;
             }
 
- // ------------------------ Mudei de bloco ( Dia ) -----------------------------------------
 
-            Console.WriteLine($"\nPara o mês {mesDaViagem}, temos disponiveis os dias 6 à 21"); //Pulei linha
+                       //------------------------ bloco que transforma o mês de número em escrita -----------------------
+                           if (mesDaViagem == 08)
+                           {
+                               NovoNome = "AGOSTO";
+                           }
+                                  else if (mesDaViagem == 09)
+                                  {
+                                       NovoNome = "SETEMBRO";
+                                  }
+                                            else if (mesDaViagem == 10)
+                                            {
+                                               NovoNome = "OUTUBRO";
+                                            }
+                            else
+                            {
+                              NovoNome = "ERRO";
+                            }
+
+                       //------------------------------------------------------------------------------------------------
+
+            // ------------------------ Mudei de bloco ( Dia ) -----------------------------------------
+
+
+
+            Console.WriteLine($"\nPara o mês {NovoNome}, temos disponiveis os dias 6 à 21"); //Pulei linha
             Console.WriteLine("Qual o dia perfeito para sua viagem?");
             diaDaViagem = Int32.Parse(Console.ReadLine());
             Console.Write("\n"); //Pulei linha
+
+            
 
             if (diaDaViagem <= 5)
             {
@@ -133,7 +162,7 @@ namespace TarefaAula06Dia070623
             {
                 Console.WriteLine("\n\nÓtimo, vamos lá!!"); //Pulei DUPLA linha
                 Console.WriteLine($"Prezado(a) {nome}");
-                Console.WriteLine($"Você adquirio uma viagem inesquecível no mês {mesDaViagem}");
+                Console.WriteLine($"Você adquirio uma viagem inesquecível no mês {NovoNome}!");
                 Console.WriteLine($"No dia {diaDaViagem}");
                 Console.WriteLine($"No período da {turno}");
                 Console.WriteLine($"Caso tenha alguma dúvida, temos nosso número de SAC, anote ai!");
