@@ -17,6 +17,7 @@ namespace TarefaAula06Dia070623
             string turno;
             string confirmação;
             string nome;
+            string nomeDaEmpresa;
 
             string NovoNome;
             mesDaViagem = 0;
@@ -24,8 +25,10 @@ namespace TarefaAula06Dia070623
 
             string AperteEnter;
 
+            nomeDaEmpresa = "MK VooS";
 
-            Console.WriteLine("Seja bem-vindo a companhia de MK VooS");
+
+            Console.WriteLine($"Seja bem-vindo a companhia de {nomeDaEmpresa}");
             Console.WriteLine("Viaje no seu ritmo e do seu jeito!");
             Console.WriteLine("E para isso, nós da MK VooS vamos te ajudar!");
             
@@ -50,7 +53,7 @@ namespace TarefaAula06Dia070623
             }
                 else if (mesDaViagem == 09)
                 {
-                       Console.WriteLine("Mês de Setembro,confirmado!");
+                       Console.WriteLine("Mês de Setembro, confirmado!");
                 }
                     else if (mesDaViagem == 10)
                     {
@@ -171,7 +174,7 @@ namespace TarefaAula06Dia070623
                 Console.WriteLine($"Caso tenha alguma dúvida, temos nosso número de SAC, anote ai!");
                 Console.WriteLine($"4002-8922 - Ao atender, é só dizer, ''novo som do Japonês que vai dar playstation 3''");
                 Console.WriteLine($"\nEntre em contato sempre que precisar, estamos ansiosos para te ajudar!"); //Pulei linha
-                Console.WriteLine($"A equipe MK VooS agradece a preferência!");
+                Console.WriteLine($"A equipe {nomeDaEmpresa} agradece a preferência!");
 
                 Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
                 Console.WriteLine("\n Aperte a tecla >>> ENTER <<< para encerrar nossos serviços!.");
@@ -180,7 +183,7 @@ namespace TarefaAula06Dia070623
             }
                     else if (confirmação == "Não")
                     {
-                        Console.WriteLine("Certo! A equipe MK VooS agradece a preferência!");
+                        Console.WriteLine($"Certo! A equipe {nomeDaEmpresa} agradece a preferência!");
                         Console.WriteLine("\n -------------- Fim da compra --------------"); //Pulei linha
                         Console.WriteLine("\n Aperte a tecla >>> ENTER <<< para encerrar nossos serviços!.");
                         AperteEnter = Console.ReadLine();
