@@ -168,7 +168,7 @@ namespace TarefaAula06Dia070623
                 Console.WriteLine("\nÓtimo, vamos lá!!"); //Pulei linha
                 Console.WriteLine($"\n\n-----------------------------------------------");//Pulei DUPLA linha
                 Console.WriteLine($"Prezado(a) {nome}");
-                Console.WriteLine($"Você adquirio uma viagem inesquecível no mês {NovoNome}!");
+                Console.WriteLine($"Você adquirio uma viagem inesquecível no mês de {NovoNome}!");
                 Console.WriteLine($"No dia {diaDaViagem}");
                 Console.WriteLine($"No período da {turno}");
                 Console.WriteLine($"Caso tenha alguma dúvida, temos nosso número de SAC, anote ai!");
